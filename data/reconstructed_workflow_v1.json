@@ -1,0 +1,147 @@
+{
+  "workflow_id": "wf_resume_screening_v1",
+  "workflow_name": "resume_screening",
+  "version": 1,
+  "version_label": "manual",
+  "entry_step_id": "step_1",
+  "steps": [
+    {
+      "id": "step_1",
+      "name": "fetch_resume",
+      "description": "Reconstructed from 12 observed occurrence(s) across demonstrations.",
+      "next_steps": [
+        "step_2"
+      ],
+      "loop_back_to": null,
+      "application": "resume_db",
+      "action": "fetch_resume",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    },
+    {
+      "id": "step_2",
+      "name": "extract_resume",
+      "description": "Reconstructed from 12 observed occurrence(s) across demonstrations.",
+      "next_steps": [
+        "step_3"
+      ],
+      "loop_back_to": null,
+      "application": "document_parser",
+      "action": "extract_resume",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    },
+    {
+      "id": "step_3",
+      "name": "check_experience",
+      "description": "Reconstructed from 10 observed occurrence(s) across demonstrations.",
+      "next_steps": [
+        "step_4"
+      ],
+      "loop_back_to": null,
+      "application": "document_parser",
+      "action": "check_experience",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    },
+    {
+      "id": "step_4",
+      "name": "compare_skills",
+      "description": "Reconstructed from 10 observed occurrence(s) across demonstrations.",
+      "next_steps": [
+        "step_5"
+      ],
+      "loop_back_to": null,
+      "application": "document_parser",
+      "action": "compare_skills",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    },
+    {
+      "id": "step_5",
+      "name": "classify_candidate",
+      "description": "Reconstructed from 10 observed occurrence(s) across demonstrations.",
+      "next_steps": [
+        "step_6"
+      ],
+      "loop_back_to": null,
+      "application": "hr_policy",
+      "action": "classify_candidate",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    },
+    {
+      "id": "step_6",
+      "name": "update_candidate_record",
+      "description": "Reconstructed from 10 observed occurrence(s) across demonstrations.",
+      "next_steps": [
+        "step_7"
+      ],
+      "loop_back_to": null,
+      "application": "crm",
+      "action": "update_candidate_record",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    },
+    {
+      "id": "step_7",
+      "name": "send_interview_invitation",
+      "description": "Reconstructed from 4 observed occurrence(s) across demonstrations.",
+      "next_steps": [],
+      "loop_back_to": null,
+      "application": "email_service",
+      "action": "send_interview_invitation",
+      "step_type": "unclassified",
+      "risk": "unknown",
+      "classification_reason": null,
+      "rules": [],
+      "exception_handlers": [],
+      "requires_approval": false,
+      "outputs": []
+    }
+  ],
+  "source_demo_ids": [
+    "demo_0001_res_0001",
+    "demo_0002_res_0002",
+    "demo_0003_res_0003",
+    "demo_0004_res_0004",
+    "demo_0005_res_0005",
+    "demo_0006_res_0006",
+    "demo_0007_res_0007",
+    "demo_0008_res_0008",
+    "demo_0009_res_0009",
+    "demo_0010_res_0010",
+    "demo_0011_res_0011",
+    "demo_0012_res_0012"
+  ]
+}

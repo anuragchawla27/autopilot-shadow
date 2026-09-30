@@ -1,0 +1,8 @@
+{
+  "num_demonstrations": 12,
+  "num_events": 68,
+  "num_distinct_steps": 7,
+  "num_branch_steps": 0,
+  "branch_step_ids": [],
+  "entry_step_id": "step_1"
+}

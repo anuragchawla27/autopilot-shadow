@@ -1,0 +1,52 @@
+{
+  "expected_steps": [
+    "fetch_resume",
+    "extract_resume",
+    "check_experience",
+    "compare_skills",
+    "classify_candidate",
+    "update_candidate_record",
+    "send_interview_invitation"
+  ],
+  "steps_present": [
+    "fetch_resume",
+    "extract_resume",
+    "check_experience",
+    "compare_skills",
+    "classify_candidate",
+    "update_candidate_record",
+    "send_interview_invitation"
+  ],
+  "steps_missing": [],
+  "step_recall": 1.0,
+  "expected_edges": [
+    [
+      "fetch_resume",
+      "extract_resume"
+    ],
+    [
+      "extract_resume",
+      "check_experience"
+    ],
+    [
+      "check_experience",
+      "compare_skills"
+    ],
+    [
+      "compare_skills",
+      "classify_candidate"
+    ],
+    [
+      "classify_candidate",
+      "update_candidate_record"
+    ],
+    [
+      "update_candidate_record",
+      "send_interview_invitation"
+    ]
+  ],
+  "edge_hits": 6,
+  "edge_total": 6,
+  "edge_recall": 1.0,
+  "edge_misses": []
+}
