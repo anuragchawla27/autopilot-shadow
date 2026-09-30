@@ -20,6 +20,9 @@ Status: **Accepted** / **Proposed** / **Open**.
 | D-013 | Event schema uses nested typed sub-objects (`DecisionRecord`, `ExceptionRecord`) rather than free-text fields | Free-text `decision`/`exception` strings | Lets Day 6 (rule extraction) and Day 11 (exception handling) query structured data instead of parsing prose | Accepted | 2 |
 | D-014 | AI-shadow events reuse the same `Event` schema as human events, distinguished by `actor_type` | Separate `AIEvent` type | Keeps Day 9 comparison a simple filter/join instead of a translation layer between two schemas | Accepted | 2 |
 | D-015 | Confidence field is enforced (by a Pydantic validator) to be null on human events | Convention only, no enforcement | Prevents a logging bug from quietly mixing human and AI confidence data | Accepted | 2 |
+| D-016 | Faults are injected via an explicit `fault:` parameter on every mock-tool method, raising typed exceptions | Random failure injection | Deterministic and repeatable — required for exact, reproducible failure-case tests (Day 14) rather than flaky randomness | Accepted | 3 |
+| D-017 | `send_email` hard-requires `approved=True` and only ever writes to an in-memory outbox; no SMTP/network code exists in the module | Trust the approval gate (Day 11) alone to prevent real sends | Code-level backstop for Safety rule S3 — irreversible action is structurally impossible here, not just policy-guarded | Accepted | 3 |
+| D-018 | Ground truth for the 12 synthetic resumes is hand-labelled by us and stored in `data/ground_truth.json`, explicitly marked as a test fixture, not an experimental result | No ground truth; only measure agreement, not accuracy | Needed so Day 5 reconstruction and Day 13 readiness evaluation have something concrete to score against, without it being confused with real experiment output (S7) | Accepted | 3 |
 
 ## Notes
 

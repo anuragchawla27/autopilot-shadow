@@ -1,0 +1,8 @@
+{
+  "job_id": "jd_0001",
+  "title": "Data Analyst",
+  "required_experience_years": 2,
+  "required_skills": ["sql", "python", "excel"],
+  "preferred_skills": ["tableau", "power bi"],
+  "description": "We are hiring a Data Analyst to support reporting and analytics. Requires at least 2 years of relevant experience and proficiency in SQL, Python, and Excel."
+}
