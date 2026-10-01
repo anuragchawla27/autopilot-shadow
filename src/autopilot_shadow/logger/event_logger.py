@@ -68,17 +68,31 @@ class EventLogger:
         reasoning_summary: Optional[str] = None,
         approval: ApprovalState = ApprovalState.NOT_REQUIRED,
         confidence: Optional[float] = None,
+        decision_from_result: bool = False,
     ) -> Event:
         """Runs `fn()` (a call into the mock environment), then records the
         outcome as an Event — success, or a caught MockToolError / duplicate
         turned into a structured ExceptionRecord. Never raises past this
         point: a failed action is a valid, loggable outcome, not a crash.
+
+        `decision_from_result=True` (added Day 7, for the automation
+        executor): `fn()` is expected to return `(output, decision)`
+        instead of just `output`. This lets a handler compute its own
+        DecisionRecord from data only available once it actually runs,
+        without the caller having to know the decision before calling
+        `fn()` — the chicken-and-egg problem a naive closure would hit.
+        Day 4's calls never pass this flag, so existing behavior is
+        unchanged.
         """
         event_id = f"evt_{uuid.uuid4().hex[:8]}"
         input_data = input_data or {}
 
         try:
-            result = fn()
+            raw_result = fn()
+            if decision_from_result:
+                result, decision = raw_result
+            else:
+                result = raw_result
             evt = Event(
                 event_id=event_id,
                 demo_id=self.demo_id,

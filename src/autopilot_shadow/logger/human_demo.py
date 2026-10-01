@@ -32,29 +32,18 @@ IMPORTANT — what this is and isn't:
 
 from __future__ import annotations
 
+from autopilot_shadow.common.feature_utils import looks_like_prompt_injection, skill_match_tier
 from autopilot_shadow.mock_env.environment import MockEnvironment
 from autopilot_shadow.mock_env.faults import FaultType
 from autopilot_shadow.schemas.event import ActorType, ApprovalState, DecisionRecord
 
 from .event_logger import EventLogger
 
-_INJECTION_MARKERS = ("ignore all previous instructions", "ignore previous instructions")
-
-
-def _skill_match_tier(required_skills: set[str], candidate_skills: list[str]) -> str:
-    if not candidate_skills:
-        return "no_data"
-    matched = required_skills & set(s.lower() for s in candidate_skills)
-    if matched == required_skills:
-        return "full"
-    if matched:
-        return "partial"
-    return "none"
-
-
-def _looks_like_prompt_injection(raw_text: str) -> bool:
-    lowered = raw_text.lower()
-    return any(marker in lowered for marker in _INJECTION_MARKERS)
+# Back-compat local aliases (Day 7 moved the implementations to
+# common/feature_utils.py so generator/handlers.py can share them
+# without reaching into this module's internals).
+_skill_match_tier = skill_match_tier
+_looks_like_prompt_injection = looks_like_prompt_injection
 
 
 def run_human_demo(

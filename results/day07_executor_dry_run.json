@@ -1,0 +1,339 @@
+{
+  "res_0001": [
+    {
+      "event_id": "evt_0ef3fff2",
+      "demo_id": "exec_res_0001",
+      "workflow_name": "resume_screening",
+      "step_index": 0,
+      "timestamp": "2026-09-01T09:00:05",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "resume_db",
+      "action": "fetch_resume",
+      "input": {
+        "resume_id": "res_0001"
+      },
+      "output": {
+        "resume_id": "res_0001",
+        "candidate_name": "Priya Nair",
+        "email": "priya.nair@example.com",
+        "experience_years": 3.5,
+        "skills": [
+          "sql",
+          "python",
+          "excel",
+          "tableau"
+        ],
+        "education": "B.Sc. Statistics",
+        "raw_text": "Data analyst with 3.5 years experience in SQL, Python, Excel and Tableau dashboards."
+      },
+      "decision": null,
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_37bff416",
+      "demo_id": "exec_res_0001",
+      "workflow_name": "resume_screening",
+      "step_index": 1,
+      "timestamp": "2026-09-01T09:00:10",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "document_parser",
+      "action": "extract_resume",
+      "input": {
+        "resume_id": "res_0001"
+      },
+      "output": {
+        "resume_id": "res_0001",
+        "candidate_name": "Priya Nair",
+        "email": "priya.nair@example.com",
+        "experience_years": 3.5,
+        "skills": [
+          "sql",
+          "python",
+          "excel",
+          "tableau"
+        ],
+        "education": "B.Sc. Statistics",
+        "raw_text": "Data analyst with 3.5 years experience in SQL, Python, Excel and Tableau dashboards."
+      },
+      "decision": null,
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_8b837021",
+      "demo_id": "exec_res_0001",
+      "workflow_name": "resume_screening",
+      "step_index": 2,
+      "timestamp": "2026-09-01T09:00:15",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "document_parser",
+      "action": "check_experience",
+      "input": {
+        "resume_id": "res_0001"
+      },
+      "output": {
+        "experience_ok": true
+      },
+      "decision": {
+        "decision_name": "experience_check",
+        "outcome": "sufficient",
+        "rule_type": null,
+        "evidence": {
+          "experience_years": 3.5,
+          "required_experience": 2
+        }
+      },
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_588274a4",
+      "demo_id": "exec_res_0001",
+      "workflow_name": "resume_screening",
+      "step_index": 3,
+      "timestamp": "2026-09-01T09:00:20",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "document_parser",
+      "action": "compare_skills",
+      "input": {
+        "resume_id": "res_0001"
+      },
+      "output": {
+        "match_tier": "full"
+      },
+      "decision": {
+        "decision_name": "skill_comparison",
+        "outcome": "full",
+        "rule_type": null,
+        "evidence": {
+          "required_skills": [
+            "excel",
+            "python",
+            "sql"
+          ],
+          "candidate_skills": [
+            "sql",
+            "python",
+            "excel",
+            "tableau"
+          ]
+        }
+      },
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_dcf3eab4",
+      "demo_id": "exec_res_0001",
+      "workflow_name": "resume_screening",
+      "step_index": 4,
+      "timestamp": "2026-09-01T09:00:25",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "hr_policy",
+      "action": "classify_candidate",
+      "input": {
+        "step_type": "human_review",
+        "reason": "Criterion 5: mixed rule evidence (2 explicit, 4 inferred/unknown) \u2014 some decision paths are well understood, others are not. AI may prepare a recommendation; a human finalizes it."
+      },
+      "output": {
+        "status": "halted_pending_human_decision"
+      },
+      "decision": null,
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "pending",
+      "confidence": null,
+      "reversible": null
+    }
+  ],
+  "res_0004": [
+    {
+      "event_id": "evt_fb16a699",
+      "demo_id": "exec_res_0004",
+      "workflow_name": "resume_screening",
+      "step_index": 0,
+      "timestamp": "2026-09-01T09:00:05",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "resume_db",
+      "action": "fetch_resume",
+      "input": {
+        "resume_id": "res_0004"
+      },
+      "output": {
+        "resume_id": "res_0004",
+        "candidate_name": "Karan Verma",
+        "email": "karan.verma@example.com",
+        "experience_years": 4.0,
+        "skills": [
+          "queries",
+          "scripting",
+          "spreadsheets"
+        ],
+        "education": "B.Sc. Mathematics",
+        "raw_text": "4 years writing database queries, automation scripting and spreadsheet analysis. (Note: skills use synonyms, not exact required-skill terms - ambiguous case.)"
+      },
+      "decision": null,
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_3678b41c",
+      "demo_id": "exec_res_0004",
+      "workflow_name": "resume_screening",
+      "step_index": 1,
+      "timestamp": "2026-09-01T09:00:10",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "document_parser",
+      "action": "extract_resume",
+      "input": {
+        "resume_id": "res_0004"
+      },
+      "output": {
+        "resume_id": "res_0004",
+        "candidate_name": "Karan Verma",
+        "email": "karan.verma@example.com",
+        "experience_years": 4.0,
+        "skills": [
+          "queries",
+          "scripting",
+          "spreadsheets"
+        ],
+        "education": "B.Sc. Mathematics",
+        "raw_text": "4 years writing database queries, automation scripting and spreadsheet analysis. (Note: skills use synonyms, not exact required-skill terms - ambiguous case.)"
+      },
+      "decision": null,
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_5e1fc2ec",
+      "demo_id": "exec_res_0004",
+      "workflow_name": "resume_screening",
+      "step_index": 2,
+      "timestamp": "2026-09-01T09:00:15",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "document_parser",
+      "action": "check_experience",
+      "input": {
+        "resume_id": "res_0004"
+      },
+      "output": {
+        "experience_ok": true
+      },
+      "decision": {
+        "decision_name": "experience_check",
+        "outcome": "sufficient",
+        "rule_type": null,
+        "evidence": {
+          "experience_years": 4.0,
+          "required_experience": 2
+        }
+      },
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_0ee2cdb0",
+      "demo_id": "exec_res_0004",
+      "workflow_name": "resume_screening",
+      "step_index": 3,
+      "timestamp": "2026-09-01T09:00:20",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "document_parser",
+      "action": "compare_skills",
+      "input": {
+        "resume_id": "res_0004"
+      },
+      "output": {
+        "match_tier": "none"
+      },
+      "decision": {
+        "decision_name": "skill_comparison",
+        "outcome": "none",
+        "rule_type": null,
+        "evidence": {
+          "required_skills": [
+            "excel",
+            "python",
+            "sql"
+          ],
+          "candidate_skills": [
+            "queries",
+            "scripting",
+            "spreadsheets"
+          ]
+        }
+      },
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "not_required",
+      "confidence": null,
+      "reversible": null
+    },
+    {
+      "event_id": "evt_8e878ee6",
+      "demo_id": "exec_res_0004",
+      "workflow_name": "resume_screening",
+      "step_index": 4,
+      "timestamp": "2026-09-01T09:00:25",
+      "actor": "automation_engine",
+      "actor_type": "ai_shadow",
+      "application": "hr_policy",
+      "action": "classify_candidate",
+      "input": {
+        "step_type": "human_review",
+        "reason": "Criterion 5: mixed rule evidence (2 explicit, 4 inferred/unknown) \u2014 some decision paths are well understood, others are not. AI may prepare a recommendation; a human finalizes it."
+      },
+      "output": {
+        "status": "halted_pending_human_decision"
+      },
+      "decision": null,
+      "reasoning_summary": null,
+      "result": "success",
+      "exception": null,
+      "approval": "pending",
+      "confidence": null,
+      "reversible": null
+    }
+  ]
+}

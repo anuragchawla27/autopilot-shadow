@@ -1,0 +1,51 @@
+[
+  {
+    "step_id": "step_1",
+    "action": "fetch_resume",
+    "step_type": "automate",
+    "risk": "low",
+    "reason": "Criterion 3: no decision rules attached to this step \u2014 it is a deterministic lookup/computation with no business judgment involved."
+  },
+  {
+    "step_id": "step_2",
+    "action": "extract_resume",
+    "step_type": "automate",
+    "risk": "low",
+    "reason": "Criterion 3: no decision rules attached to this step \u2014 it is a deterministic lookup/computation with no business judgment involved."
+  },
+  {
+    "step_id": "step_3",
+    "action": "check_experience",
+    "step_type": "automate",
+    "risk": "low",
+    "reason": "Criterion 3: no decision rules attached to this step \u2014 it is a deterministic lookup/computation with no business judgment involved."
+  },
+  {
+    "step_id": "step_4",
+    "action": "compare_skills",
+    "step_type": "automate_with_monitoring",
+    "risk": "low",
+    "reason": "Criterion 2: no decision rules attached, but this action is a noisy/ambiguous computation (Section 4: 'Skill matching: Automatable with confidence monitoring'); Day 4/6's own data (res_0004) shows keyword-based skill matching misses synonyms."
+  },
+  {
+    "step_id": "step_5",
+    "action": "classify_candidate",
+    "step_type": "human_review",
+    "risk": "medium",
+    "reason": "Criterion 5: mixed rule evidence (2 explicit, 4 inferred/unknown) \u2014 some decision paths are well understood, others are not. AI may prepare a recommendation; a human finalizes it."
+  },
+  {
+    "step_id": "step_6",
+    "action": "update_candidate_record",
+    "step_type": "automate",
+    "risk": "low",
+    "reason": "Criterion 3: no decision rules attached to this step \u2014 it is a deterministic lookup/computation with no business judgment involved."
+  },
+  {
+    "step_id": "step_7",
+    "action": "send_interview_invitation",
+    "step_type": "human_review",
+    "risk": "high",
+    "reason": "Criterion 1: irreversible + external-facing (Sends a message to a real third party (the candidate); cannot be unsent. Safety rule S3/S22: irreversible external actions always require explicit human approval.) \u2014 Section 22 requires explicit human approval regardless of rule evidence."
+  }
+]
