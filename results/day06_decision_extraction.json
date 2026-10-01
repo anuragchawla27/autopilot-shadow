@@ -1,0 +1,67 @@
+[
+  {
+    "rule_id": "rule_01",
+    "rule_type": "explicit",
+    "then_outcome": "reject",
+    "evidence_count": 2,
+    "source_demo_ids": [
+      "demo_0002_res_0002",
+      "demo_0005_res_0005"
+    ],
+    "description": "IF experience_years < 2 (required_experience_years, explicit JD config) THEN reject"
+  },
+  {
+    "rule_id": "rule_02",
+    "rule_type": "explicit",
+    "then_outcome": "shortlist",
+    "evidence_count": 5,
+    "source_demo_ids": [
+      "demo_0001_res_0001",
+      "demo_0003_res_0003",
+      "demo_0006_res_0006",
+      "demo_0011_res_0011",
+      "demo_dup_0001_res_0011"
+    ],
+    "description": "IF experience_years >= 2 AND all required_skills ['excel', 'python', 'sql'] present (explicit JD config) THEN shortlist"
+  },
+  {
+    "rule_id": "rule_03",
+    "rule_type": "unknown",
+    "then_outcome": "human_review",
+    "evidence_count": 1,
+    "source_demo_ids": [
+      "demo_0004_res_0004"
+    ],
+    "description": "IF experience_ok=True AND skill_match_tier='none' AND injection_detected=False THEN human_review (observed outcome(s): ['human_review'])"
+  },
+  {
+    "rule_id": "rule_04",
+    "rule_type": "unknown",
+    "then_outcome": "human_review",
+    "evidence_count": 1,
+    "source_demo_ids": [
+      "demo_0007_res_0007"
+    ],
+    "description": "IF experience_ok=True AND skill_match_tier='partial' AND injection_detected=False THEN human_review (observed outcome(s): ['human_review'])"
+  },
+  {
+    "rule_id": "rule_05",
+    "rule_type": "unknown",
+    "then_outcome": "human_review",
+    "evidence_count": 1,
+    "source_demo_ids": [
+      "demo_0008_res_0008"
+    ],
+    "description": "IF experience_ok=True AND skill_match_tier='no_data' AND injection_detected=False THEN human_review (observed outcome(s): ['human_review'])"
+  },
+  {
+    "rule_id": "rule_06",
+    "rule_type": "unknown",
+    "then_outcome": "human_review",
+    "evidence_count": 1,
+    "source_demo_ids": [
+      "demo_0012_res_0012"
+    ],
+    "description": "IF experience_ok=True AND skill_match_tier='full' AND injection_detected=True THEN human_review (observed outcome(s): ['human_review'])"
+  }
+]
