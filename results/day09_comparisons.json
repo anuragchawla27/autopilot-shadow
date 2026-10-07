@@ -1,0 +1,1632 @@
+[
+  {
+    "resume_id": "res_0001",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0001"
+        },
+        "ai_value": {
+          "resume_id": "res_0001"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 3.5,
+          "skills": [
+            "excel",
+            "python",
+            "sql",
+            "tableau"
+          ],
+          "candidate_name": "Priya Nair"
+        },
+        "ai_value": {
+          "experience_years": 3.5,
+          "skills": [
+            "excel",
+            "python",
+            "sql",
+            "tableau"
+          ],
+          "candidate_name": "Priya Nair"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "full"
+        },
+        "ai_value": {
+          "outcome": "full"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "shortlist"
+        },
+        "ai_value": {
+          "outcome": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.95,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "shortlist"
+        },
+        "ai_value": {
+          "status": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "email_action_taken": true
+        },
+        "ai_value": {
+          "email_action_taken": true
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "shortlist",
+    "ai_final_classification": "shortlist",
+    "human_email_sent": true,
+    "ai_email_proposed": true,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0002",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0002"
+        },
+        "ai_value": {
+          "resume_id": "res_0002"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 0.5,
+          "skills": [
+            "excel"
+          ],
+          "candidate_name": "Rohan Mehta"
+        },
+        "ai_value": {
+          "experience_years": 0.5,
+          "skills": [
+            "excel"
+          ],
+          "candidate_name": "Rohan Mehta"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "insufficient"
+        },
+        "ai_value": {
+          "outcome": "insufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "partial"
+        },
+        "ai_value": {
+          "outcome": "partial"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "reject"
+        },
+        "ai_value": {
+          "outcome": "reject"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.95,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "reject"
+        },
+        "ai_value": {
+          "status": "reject"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": false,
+        "ai_present": true,
+        "human_value": null,
+        "ai_value": {
+          "email_action_taken": false
+        },
+        "match": true,
+        "tool_agreement": null,
+        "ai_confidence": 0.99,
+        "human_result": null,
+        "ai_result": "success",
+        "explanation": "Human demo did not log this step (no_action by design, logger/human_demo.py only logs an email event on shortlist). AI shadow always proposes a step, even a no-op. Both represent 'no email sent' \u2014 treated as outcome-equivalent, not a mismatch.",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "reject",
+    "ai_final_classification": "reject",
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0003",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0003"
+        },
+        "ai_value": {
+          "resume_id": "res_0003"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 2.0,
+          "skills": [
+            "excel",
+            "python",
+            "sql"
+          ],
+          "candidate_name": "Ananya Iyer"
+        },
+        "ai_value": {
+          "experience_years": 2.0,
+          "skills": [
+            "excel",
+            "python",
+            "sql"
+          ],
+          "candidate_name": "Ananya Iyer"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "full"
+        },
+        "ai_value": {
+          "outcome": "full"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "shortlist"
+        },
+        "ai_value": {
+          "outcome": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.95,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "shortlist"
+        },
+        "ai_value": {
+          "status": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "email_action_taken": true
+        },
+        "ai_value": {
+          "email_action_taken": true
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "shortlist",
+    "ai_final_classification": "shortlist",
+    "human_email_sent": true,
+    "ai_email_proposed": true,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0004",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0004"
+        },
+        "ai_value": {
+          "resume_id": "res_0004"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 4.0,
+          "skills": [
+            "queries",
+            "scripting",
+            "spreadsheets"
+          ],
+          "candidate_name": "Karan Verma"
+        },
+        "ai_value": {
+          "experience_years": 4.0,
+          "skills": [
+            "queries",
+            "scripting",
+            "spreadsheets"
+          ],
+          "candidate_name": "Karan Verma"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "none"
+        },
+        "ai_value": {
+          "outcome": "none"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "human_review"
+        },
+        "ai_value": {
+          "outcome": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.4,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "human_review"
+        },
+        "ai_value": {
+          "status": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": false,
+        "ai_present": true,
+        "human_value": null,
+        "ai_value": {
+          "email_action_taken": false
+        },
+        "match": true,
+        "tool_agreement": null,
+        "ai_confidence": 0.99,
+        "human_result": null,
+        "ai_result": "success",
+        "explanation": "Human demo did not log this step (no_action by design, logger/human_demo.py only logs an email event on shortlist). AI shadow always proposes a step, even a no-op. Both represent 'no email sent' \u2014 treated as outcome-equivalent, not a mismatch.",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "human_review",
+    "ai_final_classification": "human_review",
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0005",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0005"
+        },
+        "ai_value": {
+          "resume_id": "res_0005"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 1.0,
+          "skills": [
+            "excel",
+            "sql"
+          ],
+          "candidate_name": "Sneha Kapoor"
+        },
+        "ai_value": {
+          "experience_years": 1.0,
+          "skills": [
+            "excel",
+            "sql"
+          ],
+          "candidate_name": "Sneha Kapoor"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "insufficient"
+        },
+        "ai_value": {
+          "outcome": "insufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "partial"
+        },
+        "ai_value": {
+          "outcome": "partial"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "reject"
+        },
+        "ai_value": {
+          "outcome": "reject"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.95,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "reject"
+        },
+        "ai_value": {
+          "status": "reject"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": false,
+        "ai_present": true,
+        "human_value": null,
+        "ai_value": {
+          "email_action_taken": false
+        },
+        "match": true,
+        "tool_agreement": null,
+        "ai_confidence": 0.99,
+        "human_result": null,
+        "ai_result": "success",
+        "explanation": "Human demo did not log this step (no_action by design, logger/human_demo.py only logs an email event on shortlist). AI shadow always proposes a step, even a no-op. Both represent 'no email sent' \u2014 treated as outcome-equivalent, not a mismatch.",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "reject",
+    "ai_final_classification": "reject",
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0006",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0006"
+        },
+        "ai_value": {
+          "resume_id": "res_0006"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 6.0,
+          "skills": [
+            "excel",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+          ],
+          "candidate_name": "Vikram Singh"
+        },
+        "ai_value": {
+          "experience_years": 6.0,
+          "skills": [
+            "excel",
+            "power bi",
+            "python",
+            "sql",
+            "tableau"
+          ],
+          "candidate_name": "Vikram Singh"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "full"
+        },
+        "ai_value": {
+          "outcome": "full"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "shortlist"
+        },
+        "ai_value": {
+          "outcome": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.95,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "shortlist"
+        },
+        "ai_value": {
+          "status": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "email_action_taken": true
+        },
+        "ai_value": {
+          "email_action_taken": true
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "shortlist",
+    "ai_final_classification": "shortlist",
+    "human_email_sent": true,
+    "ai_email_proposed": true,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0007",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0007"
+        },
+        "ai_value": {
+          "resume_id": "res_0007"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 2.5,
+          "skills": [
+            "excel",
+            "sql"
+          ],
+          "candidate_name": "Divya Reddy"
+        },
+        "ai_value": {
+          "experience_years": 2.5,
+          "skills": [
+            "excel",
+            "sql"
+          ],
+          "candidate_name": "Divya Reddy"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "partial"
+        },
+        "ai_value": {
+          "outcome": "partial"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "human_review"
+        },
+        "ai_value": {
+          "outcome": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.4,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "human_review"
+        },
+        "ai_value": {
+          "status": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": false,
+        "ai_present": true,
+        "human_value": null,
+        "ai_value": {
+          "email_action_taken": false
+        },
+        "match": true,
+        "tool_agreement": null,
+        "ai_confidence": 0.99,
+        "human_result": null,
+        "ai_result": "success",
+        "explanation": "Human demo did not log this step (no_action by design, logger/human_demo.py only logs an email event on shortlist). AI shadow always proposes a step, even a no-op. Both represent 'no email sent' \u2014 treated as outcome-equivalent, not a mismatch.",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "human_review",
+    "ai_final_classification": "human_review",
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0008",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0008"
+        },
+        "ai_value": {
+          "resume_id": "res_0008"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 3.0,
+          "skills": [],
+          "candidate_name": "Arjun Malhotra"
+        },
+        "ai_value": {
+          "experience_years": 3.0,
+          "skills": [],
+          "candidate_name": "Arjun Malhotra"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "no_data"
+        },
+        "ai_value": {
+          "outcome": "no_data"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "human_review"
+        },
+        "ai_value": {
+          "outcome": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.4,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "human_review"
+        },
+        "ai_value": {
+          "status": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": false,
+        "ai_present": true,
+        "human_value": null,
+        "ai_value": {
+          "email_action_taken": false
+        },
+        "match": true,
+        "tool_agreement": null,
+        "ai_confidence": 0.99,
+        "human_result": null,
+        "ai_result": "success",
+        "explanation": "Human demo did not log this step (no_action by design, logger/human_demo.py only logs an email event on shortlist). AI shadow always proposes a step, even a no-op. Both represent 'no email sent' \u2014 treated as outcome-equivalent, not a mismatch.",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "human_review",
+    "ai_final_classification": "human_review",
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0009",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0009"
+        },
+        "ai_value": {
+          "resume_id": "res_0009"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "failed": true,
+          "exception_type": "missing_document"
+        },
+        "ai_value": {
+          "failed": true,
+          "exception_type": "missing_document"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "failure",
+        "ai_result": "failure",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": null,
+    "ai_final_classification": null,
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0010",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0010"
+        },
+        "ai_value": {
+          "resume_id": "res_0010"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "failed": true,
+          "exception_type": "unexpected_format"
+        },
+        "ai_value": {
+          "failed": true,
+          "exception_type": "unexpected_format"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "failure",
+        "ai_result": "failure",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": null,
+    "ai_final_classification": null,
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0011",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0011"
+        },
+        "ai_value": {
+          "resume_id": "res_0011"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 5.0,
+          "skills": [
+            "excel",
+            "python",
+            "sql",
+            "tableau"
+          ],
+          "candidate_name": "Ishita Bose"
+        },
+        "ai_value": {
+          "experience_years": 5.0,
+          "skills": [
+            "excel",
+            "python",
+            "sql",
+            "tableau"
+          ],
+          "candidate_name": "Ishita Bose"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "full"
+        },
+        "ai_value": {
+          "outcome": "full"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "shortlist"
+        },
+        "ai_value": {
+          "outcome": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.95,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "shortlist"
+        },
+        "ai_value": {
+          "status": "shortlist"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "email_action_taken": true
+        },
+        "ai_value": {
+          "email_action_taken": true
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "shortlist",
+    "ai_final_classification": "shortlist",
+    "human_email_sent": true,
+    "ai_email_proposed": true,
+    "outcome_agreement": true
+  },
+  {
+    "resume_id": "res_0012",
+    "steps": [
+      {
+        "action": "fetch_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "resume_id": "res_0012"
+        },
+        "ai_value": {
+          "resume_id": "res_0012"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "extract_resume",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "experience_years": 2.0,
+          "skills": [
+            "excel",
+            "python",
+            "sql"
+          ],
+          "candidate_name": "Farhan Sheikh"
+        },
+        "ai_value": {
+          "experience_years": 2.0,
+          "skills": [
+            "excel",
+            "python",
+            "sql"
+          ],
+          "candidate_name": "Farhan Sheikh"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": true,
+        "is_decision_step": false
+      },
+      {
+        "action": "check_experience",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "sufficient"
+        },
+        "ai_value": {
+          "outcome": "sufficient"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "compare_skills",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "full"
+        },
+        "ai_value": {
+          "outcome": "full"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "classify_candidate",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "outcome": "human_review"
+        },
+        "ai_value": {
+          "outcome": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.4,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": true
+      },
+      {
+        "action": "update_candidate_record",
+        "human_present": true,
+        "ai_present": true,
+        "human_value": {
+          "status": "human_review"
+        },
+        "ai_value": {
+          "status": "human_review"
+        },
+        "match": true,
+        "tool_agreement": true,
+        "ai_confidence": 0.99,
+        "human_result": "success",
+        "ai_result": "success",
+        "explanation": "Match",
+        "is_data_step": false,
+        "is_decision_step": false
+      },
+      {
+        "action": "send_interview_invitation",
+        "human_present": false,
+        "ai_present": true,
+        "human_value": null,
+        "ai_value": {
+          "email_action_taken": false
+        },
+        "match": true,
+        "tool_agreement": null,
+        "ai_confidence": 0.99,
+        "human_result": null,
+        "ai_result": "success",
+        "explanation": "Human demo did not log this step (no_action by design, logger/human_demo.py only logs an email event on shortlist). AI shadow always proposes a step, even a no-op. Both represent 'no email sent' \u2014 treated as outcome-equivalent, not a mismatch.",
+        "is_data_step": false,
+        "is_decision_step": false
+      }
+    ],
+    "human_final_classification": "human_review",
+    "ai_final_classification": "human_review",
+    "human_email_sent": false,
+    "ai_email_proposed": false,
+    "outcome_agreement": true
+  }
+]

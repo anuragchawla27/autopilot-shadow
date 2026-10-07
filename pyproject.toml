@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autopilot-shadow"
+version = "0.1.0"
+description = "AUTOPILOT SHADOW — AI workflow reconstruction, shadow execution and automation-readiness assessment (PranavX Labs challenge)."
+requires-python = ">=3.10"
+dependencies = [
+    "pydantic>=2.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]

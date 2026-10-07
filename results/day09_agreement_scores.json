@@ -1,0 +1,369 @@
+{
+  "num_resumes_compared": 12,
+  "dimensions": {
+    "action_agreement": {
+      "matched": 74,
+      "evaluable": 74,
+      "rate": 1.0
+    },
+    "data_agreement": {
+      "matched": 24,
+      "evaluable": 24,
+      "rate": 1.0
+    },
+    "decision_agreement": {
+      "matched": 30,
+      "evaluable": 30,
+      "rate": 1.0
+    },
+    "tool_agreement": {
+      "matched": 68,
+      "evaluable": 68,
+      "rate": 1.0
+    },
+    "outcome_agreement": {
+      "matched": 12,
+      "evaluable": 12,
+      "rate": 1.0
+    }
+  },
+  "per_resume": [
+    {
+      "resume_id": "res_0001",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0002",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 6,
+        "evaluable": 6,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0003",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0004",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 6,
+        "evaluable": 6,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0005",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 6,
+        "evaluable": 6,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0006",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0007",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 6,
+        "evaluable": 6,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0008",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 6,
+        "evaluable": 6,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0009",
+      "action_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 0,
+        "evaluable": 0,
+        "rate": null
+      },
+      "tool_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0010",
+      "action_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 0,
+        "evaluable": 0,
+        "rate": null
+      },
+      "tool_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0011",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    },
+    {
+      "resume_id": "res_0012",
+      "action_agreement": {
+        "matched": 7,
+        "evaluable": 7,
+        "rate": 1.0
+      },
+      "data_agreement": {
+        "matched": 2,
+        "evaluable": 2,
+        "rate": 1.0
+      },
+      "decision_agreement": {
+        "matched": 3,
+        "evaluable": 3,
+        "rate": 1.0
+      },
+      "tool_agreement": {
+        "matched": 6,
+        "evaluable": 6,
+        "rate": 1.0
+      },
+      "outcome_agreement": {
+        "matched": 1,
+        "evaluable": 1,
+        "rate": 1.0
+      }
+    }
+  ],
+  "outcome_disagreements": []
+}
