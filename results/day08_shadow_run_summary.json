@@ -1,0 +1,98 @@
+[
+  {
+    "resume_id": "res_0001",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "shortlist",
+    "ai_confidence": 0.95
+  },
+  {
+    "resume_id": "res_0002",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "reject",
+    "ai_confidence": 0.95
+  },
+  {
+    "resume_id": "res_0003",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "shortlist",
+    "ai_confidence": 0.95
+  },
+  {
+    "resume_id": "res_0004",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "human_review",
+    "ai_confidence": 0.4
+  },
+  {
+    "resume_id": "res_0005",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "reject",
+    "ai_confidence": 0.95
+  },
+  {
+    "resume_id": "res_0006",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "shortlist",
+    "ai_confidence": 0.95
+  },
+  {
+    "resume_id": "res_0007",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "human_review",
+    "ai_confidence": 0.4
+  },
+  {
+    "resume_id": "res_0008",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "human_review",
+    "ai_confidence": 0.4
+  },
+  {
+    "resume_id": "res_0009",
+    "num_events": 2,
+    "last_action": "extract_resume",
+    "last_result": "failure",
+    "ai_proposed_classification": null,
+    "ai_confidence": null
+  },
+  {
+    "resume_id": "res_0010",
+    "num_events": 2,
+    "last_action": "extract_resume",
+    "last_result": "failure",
+    "ai_proposed_classification": null,
+    "ai_confidence": null
+  },
+  {
+    "resume_id": "res_0011",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "shortlist",
+    "ai_confidence": 0.95
+  },
+  {
+    "resume_id": "res_0012",
+    "num_events": 7,
+    "last_action": "send_interview_invitation",
+    "last_result": "success",
+    "ai_proposed_classification": "human_review",
+    "ai_confidence": 0.4
+  }
+]

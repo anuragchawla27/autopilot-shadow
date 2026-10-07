@@ -69,6 +69,7 @@ class EventLogger:
         approval: ApprovalState = ApprovalState.NOT_REQUIRED,
         confidence: Optional[float] = None,
         decision_from_result: bool = False,
+        confidence_from_result: bool = False,
     ) -> Event:
         """Runs `fn()` (a call into the mock environment), then records the
         outcome as an Event — success, or a caught MockToolError / duplicate
@@ -83,13 +84,25 @@ class EventLogger:
         `fn()` — the chicken-and-egg problem a naive closure would hit.
         Day 4's calls never pass this flag, so existing behavior is
         unchanged.
+
+        `confidence_from_result=True` (added Day 8, for the shadow
+        executor): `fn()` additionally returns a (confidence,
+        reasoning_summary) pair appended to the tuple — i.e.
+        `(output, decision, confidence, reasoning_summary)` — because
+        shadow-mode confidence depends on which Day 6 rule matches THIS
+        case's evidence, known only once the handler runs. Requires
+        decision_from_result=True. Any `confidence`/`reasoning_summary`
+        passed directly to this call are overridden by the result in
+        that case.
         """
         event_id = f"evt_{uuid.uuid4().hex[:8]}"
         input_data = input_data or {}
 
         try:
             raw_result = fn()
-            if decision_from_result:
+            if confidence_from_result:
+                result, decision, confidence, reasoning_summary = raw_result
+            elif decision_from_result:
                 result, decision = raw_result
             else:
                 result = raw_result

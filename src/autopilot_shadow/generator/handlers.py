@@ -73,6 +73,7 @@ def classify_candidate(ctx: dict, env: MockEnvironment, job_description: dict):
     injection_detected = looks_like_prompt_injection(ctx["parsed"]["raw_text"])
     experience_ok = ctx["experience_ok"]
     tier = ctx["skill_match_tier"]
+    ctx["injection_detected"] = injection_detected  # stored for Day 8's confidence-matching context
 
     if injection_detected:
         classification, reason = "human_review", "Resume text contains a suspected prompt-injection attempt."
