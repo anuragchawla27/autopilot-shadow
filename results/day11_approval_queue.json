@@ -1,0 +1,130 @@
+[
+  {
+    "resume_id": "res_0001",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0002",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0003",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0004",
+    "action": "classify_candidate",
+    "risk_score": 0.305,
+    "recommendation": "automate_with_monitoring",
+    "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0004",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0005",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0006",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0007",
+    "action": "classify_candidate",
+    "risk_score": 0.305,
+    "recommendation": "automate_with_monitoring",
+    "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0007",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0008",
+    "action": "classify_candidate",
+    "risk_score": 0.305,
+    "recommendation": "automate_with_monitoring",
+    "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0008",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0009",
+    "action": "extract_resume",
+    "risk_score": 1.0,
+    "recommendation": "human_review",
+    "reason": "OVERRIDE: this step's execution failed (result='failure') \u2014 its nominal confidence describes the computation's judgment level, not whether it actually succeeded. A failed step cannot be scored as a confident automate case.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0010",
+    "action": "extract_resume",
+    "risk_score": 1.0,
+    "recommendation": "human_review",
+    "reason": "OVERRIDE: this step's execution failed (result='failure') \u2014 its nominal confidence describes the computation's judgment level, not whether it actually succeeded. A failed step cannot be scored as a confident automate case.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0011",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0012",
+    "action": "classify_candidate",
+    "risk_score": 0.305,
+    "recommendation": "automate_with_monitoring",
+    "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305",
+    "gate_required": true
+  },
+  {
+    "resume_id": "res_0012",
+    "action": "send_interview_invitation",
+    "risk_score": 1.0,
+    "recommendation": "approval_required",
+    "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement.",
+    "gate_required": true
+  }
+]

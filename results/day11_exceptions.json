@@ -1,0 +1,62 @@
+[
+  {
+    "event_id": "evt_bc2e2bf4",
+    "demo_id": "shadow_res_0004",
+    "action": "classify_candidate",
+    "trigger": "low_confidence",
+    "exception_type": "ambiguous_decision",
+    "confidence": 0.4,
+    "reason": "Confidence 0.40 is below the 0.70 review threshold.",
+    "forces_human_review": true
+  },
+  {
+    "event_id": "evt_7517f295",
+    "demo_id": "shadow_res_0007",
+    "action": "classify_candidate",
+    "trigger": "low_confidence",
+    "exception_type": "ambiguous_decision",
+    "confidence": 0.4,
+    "reason": "Confidence 0.40 is below the 0.70 review threshold.",
+    "forces_human_review": true
+  },
+  {
+    "event_id": "evt_7fac60bc",
+    "demo_id": "shadow_res_0008",
+    "action": "classify_candidate",
+    "trigger": "low_confidence",
+    "exception_type": "ambiguous_decision",
+    "confidence": 0.4,
+    "reason": "Confidence 0.40 is below the 0.70 review threshold.",
+    "forces_human_review": true
+  },
+  {
+    "event_id": "evt_a54a31fd",
+    "demo_id": "shadow_res_0009",
+    "action": "extract_resume",
+    "trigger": "hard_failure",
+    "exception_type": "missing_document",
+    "confidence": 0.99,
+    "reason": "Step failed: Resume 'res_0009' is missing fields: ['experience_years']",
+    "forces_human_review": true
+  },
+  {
+    "event_id": "evt_fdc9071a",
+    "demo_id": "shadow_res_0010",
+    "action": "extract_resume",
+    "trigger": "hard_failure",
+    "exception_type": "unexpected_format",
+    "confidence": 0.99,
+    "reason": "Step failed: Resume 'res_0010' has a malformed 'skills' field.",
+    "forces_human_review": true
+  },
+  {
+    "event_id": "evt_c5f50107",
+    "demo_id": "shadow_res_0012",
+    "action": "classify_candidate",
+    "trigger": "low_confidence",
+    "exception_type": "ambiguous_decision",
+    "confidence": 0.4,
+    "reason": "Confidence 0.40 is below the 0.70 review threshold.",
+    "forces_human_review": true
+  }
+]
