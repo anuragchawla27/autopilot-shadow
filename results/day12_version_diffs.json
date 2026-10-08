@@ -1,0 +1,102 @@
+[
+  {
+    "from_version": 1,
+    "from_label": "Manual",
+    "to_version": 2,
+    "to_label": "AI-Proposed (Shadow)",
+    "reached_change": null,
+    "changed_metrics": {
+      "ai_proposals": {
+        "before": "<not tracked>",
+        "after": 74
+      },
+      "historical_agreement": {
+        "before": "<not tracked>",
+        "after": {
+          "action_agreement": 1.0,
+          "data_agreement": 1.0,
+          "decision_agreement": 1.0,
+          "tool_agreement": 1.0,
+          "outcome_agreement": 1.0
+        }
+      },
+      "human_events": {
+        "before": 68,
+        "after": "<not tracked>"
+      }
+    }
+  },
+  {
+    "from_version": 2,
+    "from_label": "AI-Proposed (Shadow)",
+    "to_version": 3,
+    "to_label": "Risk-Aware Human-in-the-Loop",
+    "reached_change": null,
+    "changed_metrics": {
+      "ai_proposals": {
+        "before": 74,
+        "after": "<not tracked>"
+      },
+      "automation_coverage_pct": {
+        "before": 0.0,
+        "after": 78.4
+      },
+      "gated_pct": {
+        "before": "<not tracked>",
+        "after": 21.6
+      },
+      "historical_agreement": {
+        "before": {
+          "action_agreement": 1.0,
+          "data_agreement": 1.0,
+          "decision_agreement": 1.0,
+          "tool_agreement": 1.0,
+          "outcome_agreement": 1.0
+        },
+        "after": "<not tracked>"
+      },
+      "resumes": {
+        "before": 12,
+        "after": "<not tracked>"
+      },
+      "risk_distribution": {
+        "before": "<not tracked>",
+        "after": {
+          "automate": 58,
+          "approval_required": 10,
+          "automate_with_monitoring": 4,
+          "human_review": 2
+        }
+      }
+    }
+  },
+  {
+    "from_version": 3,
+    "from_label": "Risk-Aware Human-in-the-Loop",
+    "to_version": 4,
+    "to_label": "High-Confidence Automation",
+    "reached_change": {
+      "before": true,
+      "after": false
+    },
+    "changed_metrics": {
+      "automation_coverage_pct": {
+        "before": 78.4,
+        "after": "<not tracked>"
+      },
+      "gated_pct": {
+        "before": 21.6,
+        "after": "<not tracked>"
+      },
+      "risk_distribution": {
+        "before": {
+          "automate": 58,
+          "approval_required": 10,
+          "automate_with_monitoring": 4,
+          "human_review": 2
+        },
+        "after": "<not tracked>"
+      }
+    }
+  }
+]

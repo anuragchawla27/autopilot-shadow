@@ -1,0 +1,58 @@
+[
+  {
+    "version": 1,
+    "label": "Manual",
+    "description": "Human-only resume screening (Day 4). No AI involvement at any step.",
+    "built_in_day": 4,
+    "reached": true,
+    "metrics": {
+      "automation_coverage_pct": 0.0,
+      "human_events": 68,
+      "resumes": 12
+    }
+  },
+  {
+    "version": 2,
+    "label": "AI-Proposed (Shadow)",
+    "description": "AI generates a proposed action for every step via shadow execution (Day 7-8), but nothing is risk-scored, gated, or ever actually executed.",
+    "built_in_day": 8,
+    "reached": true,
+    "metrics": {
+      "automation_coverage_pct": 0.0,
+      "ai_proposals": 74,
+      "resumes": 12,
+      "historical_agreement": {
+        "action_agreement": 1.0,
+        "data_agreement": 1.0,
+        "decision_agreement": 1.0,
+        "tool_agreement": 1.0,
+        "outcome_agreement": 1.0
+      }
+    }
+  },
+  {
+    "version": 3,
+    "label": "Risk-Aware Human-in-the-Loop",
+    "description": "Every AI proposal now carries a Day 10 risk score/recommendation and passes through Day 11's explicit 4-state approval gate before anything could execute.",
+    "built_in_day": 11,
+    "reached": true,
+    "metrics": {
+      "automation_coverage_pct": 78.4,
+      "gated_pct": 21.6,
+      "risk_distribution": {
+        "automate": 58,
+        "approval_required": 10,
+        "automate_with_monitoring": 4,
+        "human_review": 2
+      }
+    }
+  },
+  {
+    "version": 4,
+    "label": "High-Confidence Automation",
+    "description": "Target tier: steps with strong, evidenced agreement and low risk execute without a human gate. NOT YET REACHED \u2014 Day 13's readiness assessment (Section 26) is where this project will decide, from real evidence, whether any step actually qualifies. Nothing here claims it does.",
+    "built_in_day": 13,
+    "reached": false,
+    "metrics": {}
+  }
+]

@@ -44,7 +44,7 @@ See `docs/01_problem_scope_safety.md`.
 - [x] Day 9 — Human–AI comparison engine
 - [x] Day 10 — Confidence and risk scoring
 - [x] Day 11 — Disagreement, exceptions, approval gates
-- [ ] Day 12 — Correction memory and versioning
+- [x] Day 12 — Correction memory and versioning
 - [ ] Day 13 — Automation-readiness evaluation
 - [ ] Day 14 — Failure scenarios and dashboard
 - [ ] Day 15 — Experiments, report, demo

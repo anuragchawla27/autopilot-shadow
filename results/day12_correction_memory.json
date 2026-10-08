@@ -1,0 +1,426 @@
+[
+  {
+    "correction_id": "corr_c2954b2c",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0001",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_01db06f9",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0002",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_ee583125",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0003",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_f49dd72f",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0004",
+      "action": "classify_candidate"
+    },
+    "original_ai_decision": {
+      "recommendation": "automate_with_monitoring",
+      "risk_score": 0.305,
+      "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+    },
+    "human_correction": "edit",
+    "human_correction_detail": {
+      "approval_state": "edited",
+      "edited_payload": {
+        "monitoring_note": "Approved with an added manual spot-check on the resulting CRM entry."
+      },
+      "note": "Human modified the proposed action: {'monitoring_note': 'Approved with an added manual spot-check on the resulting CRM entry.'}"
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "automate_with_monitoring",
+      "risk_score": 0.305
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'edit' to a 'automate_with_monitoring' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_3eeb395d",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0004",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_5ab79690",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0005",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_b9f119bf",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0006",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_5471db2b",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0007",
+      "action": "classify_candidate"
+    },
+    "original_ai_decision": {
+      "recommendation": "automate_with_monitoring",
+      "risk_score": 0.305,
+      "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+    },
+    "human_correction": "edit",
+    "human_correction_detail": {
+      "approval_state": "edited",
+      "edited_payload": {
+        "monitoring_note": "Approved with an added manual spot-check on the resulting CRM entry."
+      },
+      "note": "Human modified the proposed action: {'monitoring_note': 'Approved with an added manual spot-check on the resulting CRM entry.'}"
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "automate_with_monitoring",
+      "risk_score": 0.305
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'edit' to a 'automate_with_monitoring' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_5f5a3925",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0007",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_986c29fa",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0008",
+      "action": "classify_candidate"
+    },
+    "original_ai_decision": {
+      "recommendation": "automate_with_monitoring",
+      "risk_score": 0.305,
+      "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+    },
+    "human_correction": "edit",
+    "human_correction_detail": {
+      "approval_state": "edited",
+      "edited_payload": {
+        "monitoring_note": "Approved with an added manual spot-check on the resulting CRM entry."
+      },
+      "note": "Human modified the proposed action: {'monitoring_note': 'Approved with an added manual spot-check on the resulting CRM entry.'}"
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "automate_with_monitoring",
+      "risk_score": 0.305
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'edit' to a 'automate_with_monitoring' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_ede21d58",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0008",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_4dccfc12",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0009",
+      "action": "extract_resume"
+    },
+    "original_ai_decision": {
+      "recommendation": "human_review",
+      "risk_score": 1.0,
+      "reason": "OVERRIDE: this step's execution failed (result='failure') \u2014 its nominal confidence describes the computation's judgment level, not whether it actually succeeded. A failed step cannot be scored as a confident automate case."
+    },
+    "human_correction": "reject",
+    "human_correction_detail": {
+      "approval_state": "rejected",
+      "edited_payload": null,
+      "note": "Human discarded the AI-proposed action; it will not be executed."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "human_review",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'reject' to a 'human_review' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_dca9e9ff",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0010",
+      "action": "extract_resume"
+    },
+    "original_ai_decision": {
+      "recommendation": "human_review",
+      "risk_score": 1.0,
+      "reason": "OVERRIDE: this step's execution failed (result='failure') \u2014 its nominal confidence describes the computation's judgment level, not whether it actually succeeded. A failed step cannot be scored as a confident automate case."
+    },
+    "human_correction": "reject",
+    "human_correction_detail": {
+      "approval_state": "rejected",
+      "edited_payload": null,
+      "note": "Human discarded the AI-proposed action; it will not be executed."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "human_review",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'reject' to a 'human_review' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_19eed081",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0011",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_9c2005f1",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0012",
+      "action": "classify_candidate"
+    },
+    "original_ai_decision": {
+      "recommendation": "automate_with_monitoring",
+      "risk_score": 0.305,
+      "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+    },
+    "human_correction": "edit",
+    "human_correction_detail": {
+      "approval_state": "edited",
+      "edited_payload": {
+        "monitoring_note": "Approved with an added manual spot-check on the resulting CRM entry."
+      },
+      "note": "Human modified the proposed action: {'monitoring_note': 'Approved with an added manual spot-check on the resulting CRM entry.'}"
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "automate_with_monitoring",
+      "risk_score": 0.305
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'edit' to a 'automate_with_monitoring' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  },
+  {
+    "correction_id": "corr_84ce13df",
+    "workflow_context": {
+      "workflow": "resume_screening",
+      "resume_id": "res_0012",
+      "action": "send_interview_invitation"
+    },
+    "original_ai_decision": {
+      "recommendation": "approval_required",
+      "risk_score": 1.0,
+      "reason": "HARD OVERRIDE (Section 22): irreversible + external-facing action always requires explicit human approval, regardless of confidence or historical agreement."
+    },
+    "human_correction": "escalate",
+    "human_correction_detail": {
+      "approval_state": "escalated",
+      "edited_payload": null,
+      "note": "Sent to deeper human review."
+    },
+    "evidence": {
+      "recommendation_that_was_overridden": "approval_required",
+      "risk_score": 1.0
+    },
+    "reason": "[SIMULATED DEMO] reference policy applied 'escalate' to a 'approval_required' case.",
+    "timestamp": "2026-10-08T10:36:45.126217+00:00",
+    "source": "simulated_demo"
+  }
+]
