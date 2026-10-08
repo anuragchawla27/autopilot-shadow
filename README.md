@@ -34,15 +34,15 @@ See `docs/01_problem_scope_safety.md`.
 ## Progress
 
 - [x] Day 1 — Problem, workflow selection, safety
-- [ ] Day 2 — Event schema and architecture
-- [ ] Day 3 — Mock business environment
-- [ ] Day 4 — Workflow event logger
-- [ ] Day 5 — Workflow reconstruction engine
-- [ ] Day 6 — Decision and condition extraction
-- [ ] Day 7 — Automation generator
-- [ ] Day 8 — Shadow execution
-- [ ] Day 9 — Human–AI comparison engine
-- [ ] Day 10 — Confidence and risk scoring
+- [x] Day 2 — Event schema and architecture
+- [x] Day 3 — Mock business environment
+- [x] Day 4 — Workflow event logger
+- [x] Day 5 — Workflow reconstruction engine
+- [x] Day 6 — Decision and condition extraction
+- [x] Day 7 — Automation generator
+- [x] Day 8 — Shadow execution
+- [x] Day 9 — Human–AI comparison engine
+- [x] Day 10 — Confidence and risk scoring
 - [ ] Day 11 — Disagreement, exceptions, approval gates
 - [ ] Day 12 — Correction memory and versioning
 - [ ] Day 13 — Automation-readiness evaluation

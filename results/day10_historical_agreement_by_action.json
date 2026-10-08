@@ -1,0 +1,37 @@
+{
+  "fetch_resume": {
+    "matched": 12,
+    "evaluable": 12,
+    "rate": 1.0
+  },
+  "extract_resume": {
+    "matched": 12,
+    "evaluable": 12,
+    "rate": 1.0
+  },
+  "check_experience": {
+    "matched": 10,
+    "evaluable": 10,
+    "rate": 1.0
+  },
+  "compare_skills": {
+    "matched": 10,
+    "evaluable": 10,
+    "rate": 1.0
+  },
+  "classify_candidate": {
+    "matched": 10,
+    "evaluable": 10,
+    "rate": 1.0
+  },
+  "update_candidate_record": {
+    "matched": 10,
+    "evaluable": 10,
+    "rate": 1.0
+  },
+  "send_interview_invitation": {
+    "matched": 10,
+    "evaluable": 10,
+    "rate": 1.0
+  }
+}
