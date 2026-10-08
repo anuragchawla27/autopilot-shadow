@@ -1,0 +1,107 @@
+{
+  "shadow_score": {
+    "shadow_score": 74.24,
+    "raw_score_before_cap": 74.24,
+    "hard_capped_by_false_automation": false,
+    "components": {
+      "accuracy": 1.0,
+      "human_agreement": 1.0,
+      "decision_stability": 0.6364,
+      "evidence_coverage": 0.3333
+    },
+    "risk": "low",
+    "reversibility": "high",
+    "reconstruction_accuracy": {
+      "step_recall": 1.0,
+      "edge_recall": 1.0,
+      "combined": 1.0
+    },
+    "human_ai_agreement": {
+      "dimensions": {
+        "action_agreement": 1.0,
+        "data_agreement": 1.0,
+        "decision_agreement": 1.0,
+        "tool_agreement": 1.0,
+        "outcome_agreement": 1.0
+      },
+      "mean": 1.0
+    },
+    "decision_extraction_quality": {
+      "total_rules": 6,
+      "grounded_rules": 2,
+      "rule_coverage": 0.3333,
+      "evidence_weighted_stability": 0.6364
+    },
+    "risk_and_reversibility": {
+      "avg_impact_score": 0.25,
+      "risk_label": "low",
+      "reversible_action_pct": 85.7,
+      "reversibility_label": "high"
+    },
+    "false_automation_rate": {
+      "automate_recommendations": 58,
+      "evaluated_against_human_decision": 58,
+      "false_automations": [],
+      "false_automation_rate": 0.0
+    },
+    "false_escalation_rate": {
+      "discretionary_gated_cases": 4,
+      "evaluated_against_human_decision": 4,
+      "would_have_matched_if_automated": [
+        {
+          "action": "classify_candidate",
+          "resume_id": "res_0004",
+          "confidence": 0.4,
+          "impact_score": 0.25,
+          "uncertainty": 0.6,
+          "disagreement": 0.0,
+          "historical_agreement_rate": 1.0,
+          "risk_score": 0.305,
+          "recommendation": "automate_with_monitoring",
+          "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+        },
+        {
+          "action": "classify_candidate",
+          "resume_id": "res_0007",
+          "confidence": 0.4,
+          "impact_score": 0.25,
+          "uncertainty": 0.6,
+          "disagreement": 0.0,
+          "historical_agreement_rate": 1.0,
+          "risk_score": 0.305,
+          "recommendation": "automate_with_monitoring",
+          "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+        },
+        {
+          "action": "classify_candidate",
+          "resume_id": "res_0008",
+          "confidence": 0.4,
+          "impact_score": 0.25,
+          "uncertainty": 0.6,
+          "disagreement": 0.0,
+          "historical_agreement_rate": 1.0,
+          "risk_score": 0.305,
+          "recommendation": "automate_with_monitoring",
+          "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+        },
+        {
+          "action": "classify_candidate",
+          "resume_id": "res_0012",
+          "confidence": 0.4,
+          "impact_score": 0.25,
+          "uncertainty": 0.6,
+          "disagreement": 0.0,
+          "historical_agreement_rate": 1.0,
+          "risk_score": 0.305,
+          "recommendation": "automate_with_monitoring",
+          "reason": "risk = 0.5*impact(0.25) + 0.3*uncertainty(0.6) + 0.2*disagreement(0.0) = 0.305"
+        }
+      ],
+      "false_escalation_rate": 1.0
+    }
+  },
+  "readiness_decision": {
+    "tier": "HUMAN_IN_THE_LOOP_READY",
+    "reason": "No false automation observed; low-risk steps automate directly; Day 11's tested approval gates (Section 18) let the AI prepare every other decision for human approval. evidence_coverage=0.3333 is not yet high enough, or human-agreement data is not yet independently sourced (independent_evaluation=False), for the HIGH tier."
+  }
+}

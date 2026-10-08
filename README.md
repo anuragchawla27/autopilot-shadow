@@ -45,7 +45,7 @@ See `docs/01_problem_scope_safety.md`.
 - [x] Day 10 — Confidence and risk scoring
 - [x] Day 11 — Disagreement, exceptions, approval gates
 - [x] Day 12 — Correction memory and versioning
-- [ ] Day 13 — Automation-readiness evaluation
+- [x] Day 13 — Automation-readiness evaluation
 - [ ] Day 14 — Failure scenarios and dashboard
 - [ ] Day 15 — Experiments, report, demo
 
