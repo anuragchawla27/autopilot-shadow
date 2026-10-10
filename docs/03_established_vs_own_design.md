@@ -18,11 +18,26 @@ The project brief requires us to state which components use established techniqu
 | Correction memory | Retrieval-based memory | Stores original decision, correction, evidence, context, reason and timestamp; no blind retraining |
 | Workflow versioning | Version control | Comparison of step, rule, risk, agreement and outcome changes across workflow versions |
 | Readiness assessment | — | Decomposable score with a documented formula and four operational categories |
+| Failure scenario testing | Fault injection / chaos testing | 10 named cases (Section 23), 8 driven by real Days 3/8-11 mechanisms, 2 (tool-selection, calibration) needed small new harnesses, documented as such |
+| Tool output validation | Contract/schema validation | Minimum per-action output-key contract, closes Section 20's gap |
+| Dashboard | Streamlit app patterns | 9-tab app reading only from prior-day results files; never recomputes a number |
 
 ## Status by day
 
-To be updated as components are built.
-
 | Component | Built on day | Final classification (established / adapted / own) |
 |---|---|---|
-| (filled in as we go) | | |
+| Event/workflow schemas | 2 | Adapted (Pydantic-validated, own field set) |
+| Mock business environment | 3 | Own design (deterministic fault injection vocabulary) |
+| Event logger / human demo policy | 4 | Own design |
+| Workflow reconstruction | 5 | Adapted (process-mining concept, own merge/filter logic) |
+| Decision extraction | 6 | Own design (explicit/inferred/unknown labelling) |
+| Automation generator | 7 | Adapted (custom DAG executor, own classification criteria) |
+| Shadow execution | 8 | Adapted (shadow-deployment concept, own step-interception design) |
+| Human-AI comparison | 9 | Own design (5 separate dimensions, never collapsed) |
+| Risk/confidence model | 10 | Own design (documented weighted formula, hard overrides) |
+| Disagreement/exceptions/approval | 11 | Own design (structurally-enforced 4-state gate) |
+| Correction memory/versioning | 12 | Adapted (plain retrieval, no embeddings) |
+| Automation readiness | 13 | Own design (decomposable score, hard-gated HIGH tier) |
+| Failure scenarios | 14 | Own design (10 cases, 2 new harnesses) |
+| Tool output contracts | 14 | Own design (minimum per-action contract) |
+| Dashboard | 14 | Adapted (Streamlit, own data-loader/presentation split) |

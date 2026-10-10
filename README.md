@@ -29,6 +29,8 @@ See `docs/01_problem_scope_safety.md`.
 - `docs/01_problem_scope_safety.md` — problem, workflow choice, scope, safety
 - `docs/02_decision_log.md` — technology and design decisions
 - `docs/03_established_vs_own_design.md` — established techniques vs our design
+- `docs/04_architecture.md` through `docs/15_automation_readiness.md` — one per component (Days 2-13)
+- `docs/16_failure_scenarios_dashboard.md` — failure scenarios and dashboard (Day 14)
 - `daily_log/` — one entry per day with proof of completion
 
 ## Progress
@@ -46,8 +48,17 @@ See `docs/01_problem_scope_safety.md`.
 - [x] Day 11 — Disagreement, exceptions, approval gates
 - [x] Day 12 — Correction memory and versioning
 - [x] Day 13 — Automation-readiness evaluation
-- [ ] Day 14 — Failure scenarios and dashboard
+- [x] Day 14 — Failure scenarios and dashboard
 - [ ] Day 15 — Experiments, report, demo
+
+## Dashboard
+
+```
+pip install -r requirements.txt
+streamlit run dashboard/app.py
+```
+
+Reads directly from `results/*.json` (Days 5-14) — displays, never recomputes.
 
 ## Status
 
