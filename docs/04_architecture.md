@@ -119,13 +119,24 @@ our actual modules:
 
 - `mock_env/` (Day 3) — the resume DB, CRM, email service, parser, ticket
   system that every stage above calls instead of a real system.
-- `api/` (FastAPI) — exposes the pipeline stages as endpoints for the
-  dashboard.
-- `dashboard/` (Streamlit, built incrementally from Day 9) — reads from the
-  same stores everything else writes to; it does not duplicate logic.
-- `experiments/` and `results/` (Day 15, harness readied earlier) — run
-  Experiments A–E and Ablation A–E against this same pipeline; `results/`
-  only ever contains script-generated output (per S7 in the safety doc).
+- `dashboard/` (Streamlit, built Day 14 — see `docs/16`) — a thin,
+  Streamlit-free `data_loader.py` reads straight from `results/*.json`/
+  `data/*.json`, and `app.py` only displays what it loads; it never
+  recomputes anything and never duplicates pipeline logic.
+- `results/` (Days 5-14) — only ever contains script-generated output (S7);
+  `experiments/` (Day 15) runs Experiments A-E and Ablation A-E against
+  this same pipeline and adds its own results files.
+
+**CORRECTION (added Day 14, D-072):** this plan originally called for a
+separate `api/` (FastAPI) layer exposing the pipeline as HTTP endpoints for
+the dashboard. That was never built, and deliberately so once Day 14 arrived
+at the design in `docs/16`: the dashboard only ever needs to *read* results
+already computed by each day's `build_*.py` script, never to trigger
+computation live, so there is no real need for a request/response API
+between them — a Python import (`dashboard/data_loader.py`) does the same
+job with less moving material. See D-072 for the full reasoning. This is
+the same "avoid unnecessary complexity" judgment call the brief itself asks
+for (Section 34) and the same one D-005 already made about n8n.
 
 ## 4. Data flow summary (plain words)
 
