@@ -262,9 +262,8 @@ same pattern — see the matching `docs/NN_*.md` for the exact command.)
 
 | Tab | Screenshot |
 |---|---|
-| Overview | ![Dashboard — Overview](docs/screenshots/dashboard_overview.png) |
-| Workflow structure | ![Dashboard — Workflow](docs/screenshots/dashboard_workflow.png) |
-| Shadow run | ![Dashboard — Shadow run](docs/screenshots/dashboard_shadow_run.png) |
+| Workflow structure | <img width="1916" height="877" alt="workflow-structure" src="https://github.com/user-attachments/assets/d420e49e-6522-4ca5-8393-f465c2456598" />|
+| Shadow run | <img width="1912" height="888" alt="Shadow-Execution" src="https://github.com/user-attachments/assets/3dc14ff8-f513-4ebe-8ad3-79fc515228bd" />|
 | Human-AI comparison | ![Dashboard — Comparison](docs/screenshots/dashboard_comparison.png) |
 | Risk scores | ![Dashboard — Risk](docs/screenshots/dashboard_risk.png) |
 | Corrections & versioning | ![Dashboard — Corrections](docs/screenshots/dashboard_corrections.png) |
