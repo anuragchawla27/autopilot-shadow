@@ -1,0 +1,798 @@
+[
+  {
+    "system": "A",
+    "name": "Bare decision only (no architecture)",
+    "description": "Section 31's 'LLM automation only' \u2014 honestly reframed since this project calls no LLM anywhere (D-009 open): the simplest possible opaque decision, same threshold logic as the real classifier but with NO prompt-injection check and NO per-step structure. See docs/18 and bare_decision.py.",
+    "cases": [
+      {
+        "resume_id": "res_0001",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0002",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0003",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0004",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0005",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0006",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0007",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0008",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0009",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 1,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0010",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 1,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0011",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0012",
+        "expected_decision": "human_review",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 3,
+        "matches_ground_truth": false
+      }
+    ],
+    "metrics": {
+      "n_cases": 12,
+      "automation_coverage_pct": 83.3,
+      "human_interventions_pct": 0.0,
+      "errors": 1,
+      "errors_pct_of_comparable": 10.0,
+      "false_automation": 1,
+      "false_automation_rate": 0.1,
+      "unsafe_invitations_sent": 5,
+      "unsafe_invitations_note": "Interview invitations drafted/proposed for a candidate whose OWN final classification was NOT 'shortlist' (rejected or sent to human review) \u2014 a concrete, measured instance of Section 1's warning about executing every step with no gate in between.",
+      "avg_steps_executed": 2.67,
+      "latency_proxy_caveat": "This project has no real network/API latency to measure (every tool is an in-memory mock, Section 19) \u2014 'latency' here is a documented proxy: the number of workflow steps executed before the run stopped (for a human gate) or completed. More steps executed autonomously is read as 'faster to a result,' not as a wall-clock time claim.",
+      "workflow_completion_pct": 83.3,
+      "failed_cases": 2
+    }
+  },
+  {
+    "system": "B",
+    "name": "+ workflow reconstruction",
+    "description": "The SAME bare decision as System A, now run through the real reconstructed Workflow step by step. Isolates what structure alone contributes: per-step traceability (steps_executed), not correctness.",
+    "cases": [
+      {
+        "resume_id": "res_0001",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0002",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0003",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0004",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0005",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0006",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0007",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0008",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0009",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0010",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0011",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0012",
+        "expected_decision": "human_review",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": false
+      }
+    ],
+    "metrics": {
+      "n_cases": 12,
+      "automation_coverage_pct": 83.3,
+      "human_interventions_pct": 0.0,
+      "errors": 1,
+      "errors_pct_of_comparable": 10.0,
+      "false_automation": 1,
+      "false_automation_rate": 0.1,
+      "unsafe_invitations_sent": 5,
+      "unsafe_invitations_note": "Interview invitations drafted/proposed for a candidate whose OWN final classification was NOT 'shortlist' (rejected or sent to human review) \u2014 a concrete, measured instance of Section 1's warning about executing every step with no gate in between.",
+      "avg_steps_executed": 6.17,
+      "latency_proxy_caveat": "This project has no real network/API latency to measure (every tool is an in-memory mock, Section 19) \u2014 'latency' here is a documented proxy: the number of workflow steps executed before the run stopped (for a human gate) or completed. More steps executed autonomously is read as 'faster to a result,' not as a wall-clock time claim.",
+      "workflow_completion_pct": 83.3,
+      "failed_cases": 2
+    }
+  },
+  {
+    "system": "C",
+    "name": "+ confidence",
+    "description": "Reuses Experiment D's real ConfidenceOnlyExecutor unchanged \u2014 this is deliberately the SAME component under both studies, not reimplemented, because it is genuinely the same ablation question (confidence added, no risk model yet) asked from two angles.",
+    "cases": [
+      {
+        "resume_id": "res_0001",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0002",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0003",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0004",
+        "expected_decision": "human_review",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 5,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0005",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0006",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0007",
+        "expected_decision": "human_review",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 5,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0008",
+        "expected_decision": "human_review",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 5,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0009",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0010",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0011",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0012",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": true,
+        "halted_for_human": false,
+        "failed": false,
+        "would_send_invitation": true,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      }
+    ],
+    "metrics": {
+      "n_cases": 12,
+      "automation_coverage_pct": 58.3,
+      "human_interventions_pct": 25.0,
+      "errors": 0,
+      "errors_pct_of_comparable": 0.0,
+      "false_automation": 0,
+      "false_automation_rate": 0.0,
+      "unsafe_invitations_sent": 3,
+      "unsafe_invitations_note": "Interview invitations drafted/proposed for a candidate whose OWN final classification was NOT 'shortlist' (rejected or sent to human review) \u2014 a concrete, measured instance of Section 1's warning about executing every step with no gate in between.",
+      "avg_steps_executed": 5.67,
+      "latency_proxy_caveat": "This project has no real network/API latency to measure (every tool is an in-memory mock, Section 19) \u2014 'latency' here is a documented proxy: the number of workflow steps executed before the run stopped (for a human gate) or completed. More steps executed autonomously is read as 'faster to a result,' not as a wall-clock time claim.",
+      "workflow_completion_pct": 83.3,
+      "failed_cases": 2
+    }
+  },
+  {
+    "system": "D",
+    "name": "+ risk model",
+    "description": "Reuses Experiment E's real RiskAwareExecutor unchanged (Day 10's risk model + Day 11's gate logic).",
+    "cases": [
+      {
+        "resume_id": "res_0001",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0002",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0003",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0004",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0005",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0006",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0007",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0008",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0009",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0010",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0011",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0012",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      }
+    ],
+    "metrics": {
+      "n_cases": 12,
+      "automation_coverage_pct": 0.0,
+      "human_interventions_pct": 83.3,
+      "errors": 0,
+      "errors_pct_of_comparable": 0.0,
+      "false_automation": 0,
+      "false_automation_rate": 0.0,
+      "unsafe_invitations_sent": 0,
+      "unsafe_invitations_note": "Interview invitations drafted/proposed for a candidate whose OWN final classification was NOT 'shortlist' (rejected or sent to human review) \u2014 a concrete, measured instance of Section 1's warning about executing every step with no gate in between.",
+      "avg_steps_executed": 5.83,
+      "latency_proxy_caveat": "This project has no real network/API latency to measure (every tool is an in-memory mock, Section 19) \u2014 'latency' here is a documented proxy: the number of workflow steps executed before the run stopped (for a human gate) or completed. More steps executed autonomously is read as 'faster to a result,' not as a wall-clock time claim.",
+      "workflow_completion_pct": 83.3,
+      "failed_cases": 2
+    }
+  },
+  {
+    "system": "E",
+    "name": "Complete AUTOPILOT SHADOW system",
+    "description": "At the per-case DECISION level, this is identical to System D \u2014 Days 7/10/11's risk-aware step walk already IS the project's real decision chain, so there is no different per-case outcome to show without inventing one. What 'complete system' actually adds beyond System D is not a different decision, but surrounding capability System D doesn't have: Day 11's full 4-state approval gate (approve/edit/reject/escalate, not just 'halted'), Day 12's correction memory, and Day 13's decomposable readiness assessment. See the 'qualitative_additions' field for where each of those is evidenced for real.",
+    "cases": [
+      {
+        "resume_id": "res_0001",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0002",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0003",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0004",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0005",
+        "expected_decision": "reject",
+        "final_action": "reject",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0006",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0007",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0008",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0009",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0010",
+        "expected_decision": "exception",
+        "final_action": null,
+        "automated": false,
+        "halted_for_human": false,
+        "failed": true,
+        "would_send_invitation": false,
+        "steps_executed": 2,
+        "matches_ground_truth": null
+      },
+      {
+        "resume_id": "res_0011",
+        "expected_decision": "shortlist",
+        "final_action": "shortlist",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 7,
+        "matches_ground_truth": true
+      },
+      {
+        "resume_id": "res_0012",
+        "expected_decision": "human_review",
+        "final_action": "human_review",
+        "automated": false,
+        "halted_for_human": true,
+        "failed": false,
+        "would_send_invitation": false,
+        "steps_executed": 6,
+        "matches_ground_truth": true
+      }
+    ],
+    "metrics": {
+      "n_cases": 12,
+      "automation_coverage_pct": 0.0,
+      "human_interventions_pct": 83.3,
+      "errors": 0,
+      "errors_pct_of_comparable": 0.0,
+      "false_automation": 0,
+      "false_automation_rate": 0.0,
+      "unsafe_invitations_sent": 0,
+      "unsafe_invitations_note": "Interview invitations drafted/proposed for a candidate whose OWN final classification was NOT 'shortlist' (rejected or sent to human review) \u2014 a concrete, measured instance of Section 1's warning about executing every step with no gate in between.",
+      "avg_steps_executed": 5.83,
+      "latency_proxy_caveat": "This project has no real network/API latency to measure (every tool is an in-memory mock, Section 19) \u2014 'latency' here is a documented proxy: the number of workflow steps executed before the run stopped (for a human gate) or completed. More steps executed autonomously is read as 'faster to a result,' not as a wall-clock time claim.",
+      "workflow_completion_pct": 83.3,
+      "failed_cases": 2
+    },
+    "qualitative_additions_over_system_d": [
+      {
+        "capability": "4-state human approval gate (not just halt)",
+        "evidence": "results/day11_approval_queue.json"
+      },
+      {
+        "capability": "disagreement investigation records",
+        "evidence": "results/day11_disagreements.json"
+      },
+      {
+        "capability": "correction memory",
+        "evidence": "results/day12_correction_memory.json"
+      },
+      {
+        "capability": "workflow versioning (V1-V4)",
+        "evidence": "results/day12_workflow_versions.json"
+      },
+      {
+        "capability": "decomposable automation-readiness score + tiered decision",
+        "evidence": "results/day13_readiness_assessment.json"
+      },
+      {
+        "capability": "10 Section-23 failure scenarios proven to fail safely",
+        "evidence": "results/day14_failure_scenarios.json"
+      }
+    ]
+  }
+]
