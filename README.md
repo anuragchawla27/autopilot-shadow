@@ -264,12 +264,11 @@ same pattern — see the matching `docs/NN_*.md` for the exact command.)
 |---|---|
 | Workflow structure | <img width="1916" height="877" alt="workflow-structure" src="https://github.com/user-attachments/assets/d420e49e-6522-4ca5-8393-f465c2456598" />|
 | Shadow run | <img width="1912" height="888" alt="Shadow-Execution" src="https://github.com/user-attachments/assets/3dc14ff8-f513-4ebe-8ad3-79fc515228bd" />|
-| Human-AI comparison | ![Dashboard — Comparison](docs/screenshots/dashboard_comparison.png) |
-| Risk scores | ![Dashboard — Risk](docs/screenshots/dashboard_risk.png) |
-| Corrections & versioning | ![Dashboard — Corrections](docs/screenshots/dashboard_corrections.png) |
-| Automation readiness | ![Dashboard — Readiness](docs/screenshots/dashboard_readiness.png) |
-| Failure scenarios | ![Dashboard — Failures](docs/screenshots/dashboard_failures.png) |
-| Experiments & ablation (Day 15) | ![Dashboard — Experiments](docs/screenshots/dashboard_experiments.png) |
+| Human-AI comparison | <img width="1913" height="880" alt="Human vs Ai Comparison" src="https://github.com/user-attachments/assets/a8ab8719-22ff-45fc-a6c8-eb93753aa43b" />|
+| Risk scores | <img width="1917" height="901" alt="Risk-Distribution" src="https://github.com/user-attachments/assets/4ab219ae-de9c-428c-83de-a1baff35a629" />|
+| Corrections & versioning | <img width="1917" height="815" alt="Workflow-Execution" src="https://github.com/user-attachments/assets/e38ddf35-8a20-4bd3-8aaa-ab1d2b9a146f" />|
+| Automation readiness | <img width="1917" height="870" alt="Automation-readiness" src="https://github.com/user-attachments/assets/411ac660-d339-4a9f-9983-d3f30eb58ca3" />|
+| Failure scenarios | <img width="1917" height="852" alt="Failure-Cases" src="https://github.com/user-attachments/assets/e6dc3eae-f0bd-4943-9dfe-e88adac97738" />|
 
 `docs/screenshots/` does not exist yet — create it and add the 9 PNGs above
 (any size is fine; GitHub scales them to fit). Until then, each row above
